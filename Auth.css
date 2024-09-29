@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+
+.sign-in-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;  /* Ensure it spans the full width of the viewport */
+    background: linear-gradient(135deg, #000000, #1a1a1a, #333333);
+    background-size: 150% 150%;
+    animation: gradientShift 12s ease infinite;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 0 0 15px rgba(0, 230, 230, 1), 0 0 20px rgba(0, 230, 230, 0.8);
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #cccccc;
+    text-shadow: 0 0 6px rgba(0, 230, 230, 0.4), 0 0 6px rgba(230, 0, 0, 0.4);
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    box-shadow: 0 0 10px rgba(230, 0, 0, 0.6), 0 0 15px rgba(230, 0, 0, 0.8);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(230, 0, 0, 0.8), 0 0 20px rgba(230, 0, 0, 1);
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 0 0 20px rgba(230, 0, 0, 1), 0 0 20px rgba(230, 0, 0, 1);
+}

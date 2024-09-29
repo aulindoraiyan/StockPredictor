@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #df2828;
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Soft blue gradient background */
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom right, #bff0d5, #659eee); /* Gradient from light blue to light lavender */
+    border: 1px solid #007bff; /* Blue border */
+    color: #333; /* Dark text color */
+}
+
+.App-header {
+    background: linear-gradient(to right, #22384c, #1b196b); /* Gradient background from teal to blue */
+    padding: 20px;
+    text-align: center;
+    text-emphasis-color: red;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    color: #fff; /* White text for better contrast */
+}
+
+
+
+
+.App-header h1 {
+    font-size: 2.5em;
+    color: #0bb6c9; /* Coral color for the header */
+    margin-bottom: 20px; /* Spacing below the title */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+}
+
+.stock-selection {
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.date-range-picker {
+    margin-left: 20px; /* Space between dropdown and date picker */
+}
+
+.main-content {
+    flex: 1; /* Allows the main content to grow */
+    overflow-y: auto; /* Enable scrolling */
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background for contrast */
+    border-radius: 15px; /* More pronounced rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Softer shadow */
+}
+
+.main-content button {
+    margin-top: 20px;
+    font-size: 1em;
+    background-color: #ff6f61; /* Coral button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded button corners */
+    padding: 10px 20px; /* Button padding */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0s, color 0s, transform 0s; /* Instant transitions */
+
+}
+
+.main-content button:hover {
+    background-color: #fff; /* Lighten button on hover */
+    color: #ff6f61; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* ChatBot styles (if necessary) */
+.ChatBot {
+    margin-top: 20px; /* Space above the chatbot */
+}
+
+/* Add any additional styles as needed for the components */
